@@ -1,26 +1,28 @@
 import { useState } from 'react'
+import HeroHeader from './components/HeroHeader'
+import VideoLibrary from './components/VideoLibrary'
+import LiveDashboard from './components/LiveDashboard'
+import TeamAndContact from './components/TeamAndContact'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [highContrast, setHighContrast] = useState(false)
+  const [fontScale, setFontScale] = useState(100)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
-      </div>
+    <div className={`min-h-screen bg-stone-50` }>
+      <HeroHeader
+        highContrast={highContrast}
+        onToggleContrast={() => setHighContrast(v => !v)}
+        fontScale={fontScale}
+        setFontScale={setFontScale}
+      />
+      <main>
+        <VideoLibrary />
+        <LiveDashboard />
+        <TeamAndContact />
+      </main>
+      <Footer />
     </div>
   )
 }
