@@ -3,25 +3,18 @@ import { Play, Filter } from 'lucide-react'
 
 const demoData = [
   {
-    id: 'ethics-basics',
-    title: 'Ethics Basics for Children',
+    id: 'video-1',
+    title: 'Naitika Foundations Demo 1',
     category: 'Ethics',
     day: 'Day 1',
-    url: 'https://www.youtube.com/embed/Ke90Tje7VS0?si=sample',
+    url: 'https://www.youtube.com/embed/zPsoFhUDLuU?si=68awzlUi5kGZcO_H',
   },
   {
-    id: 'human-values',
-    title: 'Human Values - Respect and Empathy',
+    id: 'video-2',
+    title: 'Naitika Foundations Demo 2',
     category: 'Human Values',
     day: 'Day 2',
-    url: 'https://www.youtube.com/embed/bMknfKXIFA8?si=sample',
-  },
-  {
-    id: 'civic-duties',
-    title: 'Civic Duties and Responsibility',
-    category: 'Civics',
-    day: 'Day 3',
-    url: 'https://www.youtube.com/embed/w7ejDZ8SWv8?si=sample',
+    url: 'https://www.youtube.com/embed/yDGdpWkGmFU?si=FHNWvO9hRhdXE2rz',
   },
 ]
 
